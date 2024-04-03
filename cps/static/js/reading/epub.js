@@ -92,8 +92,6 @@ var reader;
             method: "post",
             data: { lastCFI: cfi || "" },
             headers: { "X-CSRFToken": csrftoken }
-        }).fail(function (xhr, status, error) {
-            alert(error);
         });
     }
 })();
